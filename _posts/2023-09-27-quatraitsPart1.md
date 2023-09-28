@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Trey
-title: The Quatraits of RxCocoa Part 1
+title: The Quatraits of RxCocoa - Part 1
 ---
 
 I arrived at Grindr in January of 2022 both knowing they had an [RxSwift](https://github.com/ReactiveX/RxSwift) tech stack and knowing that I did not know RxSwift itself.[^1] Never having used [functional reactive programming](https://en.wikipedia.org/wiki/Functional_reactive_programming) (FRP) before, I had to quickly reach highway speeds if I wanted to merge any pull requests. The [Kodeco book](https://www.kodeco.com/books/rxswift-reactive-programming-with-swift/v4.0) (née Wenderlich) on RxSwift helped immensely as did, of course, actually coding six to seven hours a day. But to truly guarantee I understood FRP's concepts and continued to retain them, I decided to combine my triple love of poetry, puns, and programming into a mnemonic: some didactic light verse. Emily Dickinson’s ballad style was the main inspiration for the format; its flexibility, humor, and concision was ideal for my purposes. 
@@ -48,7 +48,24 @@ Every subscription must be added to a DisposeBag for garbage collection and life
 
 [^3]: While not strictly true that EVERY subscription needs a DisposeBag (e.g., a one-and-done autocompleting subscription), my personal preference is to still add to the DisposeBag and avoid the ugly ambiguity of `_ = observable.subscribe()` in the code.
 
-Next, in part 2 of this series, I will go over some Traits that all Reactive forms use.
+## One operator
+
+### "Arizona-Lipton-Earl Grey"
+
+source different streams – and bottle yours –  
+in it the blending new –  
+mixed Teas taste flat – Mapped all to One —  
+but take it— and make do –  
+
+### Explanation
+
+This poem is the first one where allegorical imagery and wordplay are key to the mnemonic.[^4] The `flatMap` operator combines one or multiple data streams (the different flavors of `T`eas) into a single new `Observable` of a different data type altogether (the "bottle yours") . `.flatMap` keeps the same subscription whenever new `onNext` data arrives, unlike `flatMapLatest` which disposes first. `.map` changes the data but doesn't create a new `Observable`.
+
+[^4]: I call poems like these Object-Oriented Poetry.
+
+## Onward!
+
+This first post introduced you to the basic concept of an `Observable` as well as one of its most used operators, `.flatMap`. Next, in part 2 of this series, I will go over some Traits that all Reactive specifications use.
 
 
 
