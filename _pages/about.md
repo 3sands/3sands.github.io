@@ -2,25 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Who I am and where I've been
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: IMG_0657.jpeg
+  image_circular: true # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Chicago, IL</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I received my BA in mathematics and economics from Reed College. Afterwards, still working under the assumption that a PhD and academia was still in my future, I moved to Washington, DC to work as an economic research assistant at the Federal Reserve Board of Governors in the Advanced Foreign Economies section. After seeing what all economic research entails, I realized that sort of data and statistical work was not for me. I then discovered the University of Chicago was starting a new degree program based on the intersection of big data/machine learning and public policy: Masters of Science in Computational Analysis and Public Policy (MSCAPP). I was able to be in the first cohort of the program. However, here I found that the data-cleaning-to-machine-learning pipeline building was also not the life for me. Fortunatetely, the program was flexible enough to alter my classes more on software engineering with a focus on iOS mobile development.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Since graduating in 2016, I have worked at two different digital agencies as well as at Grindr. The first agency (GPShopper) largely focused on eCommerce and fast fashion apps. I helped create and launch the Boohoo and its international apps as well as working with Crate and Barrel, Footlocker, and Pacsun. I later was promoted to work on GPShopper's credit card servicing SDK where we were updating it to use Swift instead of Objective-C. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+The second agency I worked at was called Rightpoint. Here I worked on maintaining and adding new features and products to GE Lighting's smart bulb app (now Cync by Savant), which included low-level BLE interactions with the IoT devices. I also then led a team of developers based out of India to maintain Greyhound's mobile apps, assigning and distributing the tickets and determining the sequencing.
+
+My latest work has been at Grindr, which serves six million daily users. There I was part of the Core/Engagement team, focusing on the main cascade and filtering of the app for free and paid users. I led the development of the Unified Cascade (combining what had been tabs into one), the new filters screen, a and new Teleport consumable. 
+
+Outside of work, I write poetry, play strategic board games, travel with friends, and throw the ball near the lake with my rescue dog, Laika.

@@ -2,96 +2,69 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Trey Sands
     - name: Languages
-      value: English, German
+      value: English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: MSCAPP (Masters of Science in Computational Analysis and Public Policy)
+      institution: University of Chicago, Chicago, IL
+      year: 2016
+    - title: BA in Mathematics-Economics
+      institution: Reed College, Portland, OR
+      year: 2011
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Senior iOS Engineer
+      institution: Grindr, West Hollywood, CA
+      year: 2022.1 — 2023.8
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - title: Led the development of multiple new features of the Grindr iOS application, which serves over 6 million daily users, including
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - the new main screen of the app which combined three tabs into one unified grid via MVVM and multiple services layers,
+            - the creation of a new modern pill-shaped modal filter screen (called Pilters) in UIKit, and
+            - a new microtransaction Teleport consumable creating a new map screen and user experience in both UIKIt and SwiftUI.
+        - Managed the release process of the main Grindr application throughout a version cycle.
+        - Created and updated technical documents explaining new and legacy architecture and featuring Mermaid-embedded visuals of the underlying protocol-oriented services/managers.
+        - Worked in tandem with product, design, and QA throughout the project lifecycle projects to identify risks and missing end-user requirements to maintain hitting deadlines consistently.
+        - Monitored data and analytics of iOS app measurements.
+        - Acted as a technical interviewer in the hiring process to grow the iOS team.
+        - Mentored an iOS summer intern through creating new UI tests for Teleport feature and refactoring an update email screen from UIKit to Swift UI.
+
+    - title: Senior iOS Developer
+      institution: Rightpoint, a Genpact company, Chicago, IL
+
+      year: 2019.6 - 2022.1
       description:
-        - Description 1.
-        - Description 2.
+        - Led a development team out of India for the development and maintenance of the Greyhound mobile ticketing app. multiple clients and platforms, including iOS, web, and Android, on multiple client calls and communication styles. Worked directly with managers across multiple domains to plan product timelines.
+        - Estimated project hours and costs for new statements of work in project contract extensions.
+        - Led the GE Lighting iOS team during the client disengagement process after the former team lead left. Added new product lines and features and refactored major portions of the app with simultaneous live production support. Improved the CI process by adding in fastlane and moving to CircleCI. Added documentation for the app’s sunset.
+        - Designed the new iOS developer interview process, which Rightpoint’s Android and web development team later adapted for their own interviews.
+        - Mentored a self-taught junior iOS developer on object-oriented design and thought processes and modern-day Swift design patterns.
+        - Continued development and maintenance of the Cync app (C by GE) to control smart bulbs and smart switches for GE Lighting via Wi-Fi, CoreBluetooth, or Alexa or Apple Home integration. Worked closely with a bulb firmware team distributed in China and in Detroit for the addition of new product lines and BLE firmware commands.
+        - Took over development and the digital operations of an ecommerce app for medical supplement company after our product team creation of the first version.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: iOS Developer
+      institution: GPShopper, a Synchrony solution, Chicago, IL
+      year: 2016.9 - 2019.6
       description:
+        - Member of the iOS development and installation team for Synchrony Plug-In (SyPI), a native framework for retailers to integrate in their applications to allow their users to apply for credit and service their accounts.
+        - Developed native features in Objective-C for SyPI such as credit application and password reseting that consumed REST APIs.
+        - Traveled to client sites for SyPI framework installations and miscellaneous troubleshooting.
+        - Led the development team in the creation of the Boohoo and Boohoo Man iOS applications which contained native product search and browse, account creation, wishlists, and full ecommerce checkout.
+        - Collaborated in a co-development team with Crate&Barrel engineers to create the native shopping module of their iOS application.
+        - Maintained codebases with regular bug fixes and additional features like NewRelic analytics and error tracking of client apps like AC Moore, Steve Madden, and Stadium Goods.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Senior Research Assistant
+      institution: Board of Governors of the Federal Reserve System, Washington, DC
+      year: 2011.9 - 2014.8
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Poetry, reading, board games, video games, traveling
