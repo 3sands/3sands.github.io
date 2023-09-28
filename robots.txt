@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://3sands.github.io/blog/sitemap.xml
+Sitemap: https://3sands.github.io/sitemap.xml
