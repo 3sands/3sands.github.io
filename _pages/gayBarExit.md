@@ -1,7 +1,7 @@
 ---
 title: Canonical Layout
 layout: plain
-permalink: /gaybar/exit
+permalink: /gaybarmri/exit
 ---
 <h1>Blueprint pdf</h1>
 

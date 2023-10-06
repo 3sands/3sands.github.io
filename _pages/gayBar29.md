@@ -1,7 +1,7 @@
 ---
 title: 29
 layout: gay_bar_mri_haiku_square
-permalink: /gaybar/29
+permalink: /gaybarmri/29
 left: 28
 right: 30
 up: 22
