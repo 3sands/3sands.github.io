@@ -1,0 +1,21 @@
+---
+layout: plain
+---
+<body>
+<h1>Gay Bar MRI</h1>
+
+<p>Pick a number between 0 and 48, inclusive:</p>
+
+<input type="search" id="searchbar" value=""/>
+
+<button id="goto">Enter</button>
+
+<script>
+document.getElementById("goto").addEventListener("click", goTo);
+
+function goTo() {  
+  var result = document.getElementById("searchbar").value;  
+  window.location.href = result;
+}
+</script>
+</body>

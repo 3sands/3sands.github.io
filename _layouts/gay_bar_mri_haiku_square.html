@@ -1,0 +1,35 @@
+---
+<!-- title: Gay Bar MRI Square -->
+---
+<style>
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.outerBox {
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	width: 300px;
+}
+</style>
+
+<div class="outerBox">
+	<div class="center">
+		<div class="center">
+			<div id="markdown-content" style="text-align: center;">
+	      {{ content || markdownify }}
+	    	</div>
+		</div>
+	</div>
+</div>
+
+<a href="{{ page.left | prepend: '/gaybar/' | prepend: site.baseurl }}">Left</a>
+<a href="{{ page.right | prepend: '/gaybar/' | prepend: site.baseurl }}">Right</a>
+<a href="{{ page.up | prepend: '/gaybar/' | prepend: site.baseurl }}">Up</a>
+<a href="{{ page.down | prepend: '/gaybar/' | prepend: site.baseurl }}">Down</a>
+<a href="{{ 'exit' | prepend: '/gaybar/' | prepend: site.baseurl }}">Exit</a>
