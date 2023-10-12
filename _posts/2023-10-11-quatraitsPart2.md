@@ -7,7 +7,7 @@ tags: ["poetry", "rxswift"]
 
 In [Part One]({% post_url 2023-09-27-quatraitsPart1 %}) of this series, I provided the mnemonic poems I used to help learn and retain the basics of Reactive programming, specifically `Observable`s and one operator (`flatMap`) in `RxSwift`.
 
-Now, Part Two will go over three different `Trait`s that an `Observable` can be: `Single`, `Completable`, and `Maybe`.
+Now, Part Two will go over four different `Trait`s that an `Observable` can be: `Single`, `Completable`, `Maybe`, and `Subject`.
 
 ## Traits
 A `Trait` is an `Observable` but with its own specifications and limitations and uses beyond the broader `Observable`. These shared `Trait`s allow for consistency across Rx implementations (RxJava, RxSwift, RxKotlin, etc.) and enable easier cross-platform communication and guarantees certain properties. `Traits` are largely just syntactical sugar and interfaces atop the underlying `Observable`.
@@ -48,6 +48,19 @@ it can own an Error — 
 ### Explanation
 
 A `Maybe` is like a `Single` combined with a Swift `@discardableResult` or a `Completable`. `Maybe` will have one of three possibilities: an `onComplete`, a `success` with `T` element, or an `onError`. It's used when you could want the element but not necessarily need to have an element returned. For instance, fetching a value from a cache. The `Maybe` trait is not one I used too often in my day-to-day programming. I... actually don't think I ever used it at all myself...
+
+### "A Sartre Subject"
+
+a Subject’s an object - a middle man —  
+the conduit between  
+subscribed events and his down stream —  
+to see — and then be seen —  
+
+### Explanation
+
+I haven't yet mentioned the concept of an `Observer` in Reactive programming. It's the receiving counterpart to the passing-event `Observable`. `Observers`, for instance, could subscribe to a `UIButton` to know when a user taps on one, so, e.g., the `Observer` would receive an `onTap` event. The `Observer` would then perform the code declared during the subscription.
+
+A `Subject` is both an `Observer` and an `Observable`, allowing for events to be received and then passed on to other `Observer`s which had subscribed to the `Subject`. `Subjects` are widely used and come in multiple flavors and back some of what is specific to RxCocoa (to be explained in Part 4).
 
 ## Onward!
 
