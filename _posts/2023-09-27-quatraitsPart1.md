@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Trey
-title: The Quatraits of RxCocoa - Part 1
+title: The Quatraits of RxSwift - Part 1
 tags: ["poetry", "rxswift"]
 ---
 
@@ -39,15 +39,15 @@ we’ll leak – memory –
 
 In FRP, data is delivered over time downstream as a sequence of immutable Events. This concept is captured in an `Observable`. The data an `Observable<T>` passes down can be anything, hence the generic element T.[^2] 
 
-[^2]: Realizing "Observable of T" and "immutability" both rhymed and had identical meter was the inspiration behind the poems
+[^2]: Realizing "Observable of T" and "immutability" both rhymed and had identical meter was the inspiration behind the poems.
 
 Once an `Observable` has been created, the app can then subscribe to this `Observable` in order respond to a new event. These events are one of three types: an element, a complete, or an error. We also, after subscribing to the `Observable`, can perform a series of different non-mutating functional operators on the delivered data events, e.g., `map`, `filter`, `reduce`. Ideally, providing the series of operators at the call site results in future engineers knowing what is happening to the data (the "declaring intent"), but one should still leave a comment explaining Why the operations are being done to avoid potential misinferences. 
 
-The subscription to an `Observable` will receive zero to many `T` elements during its lifetime and will continue to perform the operators we provided to it until one of three possibilites occur: the `Observable` returns an error, the `Observable` returns a complete, or the subscription's DisposeBag is emptied. Upon the first two of these, the subscription (and any others which subscribed to that same `Observable`) will no longer respond to any further elements provided. Emptying an instance DisposeBag will only dispose of the subscriptions that have been added to that instance.
+The subscription to an `Observable` will receive zero to many `T` elements during its lifetime and will continue to perform the operators we provided to it until one of three possibilites occur: the `Observable` returns an error, the `Observable` returns a complete, or the subscription's `DisposeBag` is emptied. Upon the first two of these, the subscription (and any others which subscribed to that same `Observable`) will no longer respond to any further elements provided. Emptying an instance of a `DisposeBag` will only dispose of the subscriptions that have been added to that instance.
 
-Every subscription must be added to a DisposeBag for garbage collection and lifecycle purposes.[^3] If a subscription isn't properly disposed, then the observable objects and the downstream subscriptions will remain in memory and leak. Take a look at the memory graph in XCode after not including a disposeBag to see for yourself.
+Every subscription must be added to a `DisposeBag` for garbage collection and lifecycle purposes.[^3] If a subscription isn't properly disposed, then the observable objects and the downstream subscriptions will remain in memory and leak. Take a look at the memory graph in XCode after not including a `DisposeBag` to see for yourself.
 
-[^3]: While not strictly true that EVERY subscription needs a DisposeBag (e.g., a one-and-done autocompleting subscription), my personal preference is to still add to the DisposeBag and avoid the ugly ambiguity of `_ = observable.subscribe()` in the code.
+[^3]: While not strictly true that EVERY subscription needs a `DisposeBag` (e.g., a one-and-done autocompleting subscription), my personal preference is to still add to the `DisposeBag` and avoid the ugly ambiguity of `_ = observable.subscribe()` in the code.
 
 ## One operator
 
@@ -66,7 +66,7 @@ This poem is the first one where allegorical imagery and wordplay are key to the
 
 ## Onward!
 
-This first post introduced you to the basic concept of an `Observable` as well as one of its most used operators, `.flatMap`. Next, in part 2 of this series, I will go over some Traits that all Reactive specifications use.
+This first post introduced you to the basic concept of an `Observable` as well as one of its most used operators, `.flatMap`. Next, in [Part Two]({% post_url 2023-10-11-quatraitsPart2 %})  of this series, I will go over some Traits that all Reactive specifications use.
 
 
 
