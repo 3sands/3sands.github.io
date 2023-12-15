@@ -64,7 +64,7 @@ A `Subject` is both an `Observer` and an `Observable`, allowing for events to be
 
 ## Onward!
 
-This second part introduced you to some `Traits` of `Observable`s in Reactive programming. Next, in part 3 of this series, I will go over some more intense `Subject`s in RxSwift.
+This second part introduced you to some `Traits` of `Observable`s in Reactive programming. Next, in [Part Three]({% post_url 2023-12-15-quatraitsPart3 %}) of this series, I will go over some more intense `Subject`s in RxSwift.
 
 
 
